@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanche</title>
+</head>
+<body>
+    <h1>Valor do Lanche</h1>
+
+    <label for="codigoInput">Código do Item:</label>
+    <select id="codigoInput">
+        <option value="cachorro-quente">Cachorro Quente (R$11,00)</option>
+        <option value="bauru">Bauru (R$8,50)</option>
+        <option value="misto-quente">Misto Quente (R$8,00)</option>
+        <option value="hamburger">Hamburger (R$9,00)</option>
+        <option value="cheeseburger">Cheeseburger (R$10,00)</option>
+        <option value="refrigerante">Refrigerante (R$4,50)</option>
+    </select><br>
+
+    <label for="quantidadeInput">Quantidade:</label>
+    <input type="number" id="quantidadeInput" min="1" value="1"><br>
+
+    <button onclick="calcularValor()">Calcular Valor</button>
+    <p id="resultado"></p>
+</body>
+<script src="script.js"></script>
+</html>

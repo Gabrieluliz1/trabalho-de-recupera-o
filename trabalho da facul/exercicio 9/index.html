@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valor Final</title></head>
+<body>
+    <h1>Valor Final do Produto</h1>
+
+    <label for="precoInput">Preço do Produto (R$):</label>
+    <input type="number" id="precoInput" required><br>
+
+    <label for="condicaoPagamentoSelect">Condição de Pagamento:</label>
+    <select id="condicaoPagamentoSelect">
+        <option value="a">À vista em dinheiro ou cheque (10% de desconto)</option>
+        <option value="b">À vista no cartão de crédito (15% de desconto)</option>
+        <option value="c">Em duas vezes sem juros</option>
+        <option value="d">Em duas vezes com juros de 10%</option>
+    </select><br>
+
+    <button onclick="calcularValorFinal()">Calcular Valor Final</button>
+    <p id="resultado"></p>
+</body>
+<script src="script.js"></script>
+</html>
